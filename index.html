@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alphabate Clash Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-anton {
+            font-family: "Anton", sans-serif;
+        }
+
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-poppins">
+    <section id="home-screen"
+        class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex justify-center items-center">
+        <div class="flex flex-col gap-12 justify-center items-center">
+            <h1 class="font-anton text-9xl font-normal text-white text-center">ALPHABET CLASH</h1>
+            <p class="text-2xl font-medium text-center text-[#FFF]">Unleash Your Keyboard Kung Fu : Press “Enter” to
+                Play</p>
+            <button class="btn rounded-lg">Play Now</button>
+        </div>
+    </section>
+
+    <section class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex flex-col justify-center gap-20">
+        <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] mx-32 h-80">
+            <div class="flex justify-center">
+                <p class="bg-[#2F2941] px-6 pb-4 rounded-b-xl text-white">Don't watch keyboard while playing...
+                </p>
+            </div>
+            <div class="flex justify-center items-center h-full">
+                <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd w-14 h-14">q</kbd>
+                <kbd class="kbd w-14 h-14">w</kbd>
+                <kbd class="kbd w-14 h-14">e</kbd>
+                <kbd class="kbd w-14 h-14">r</kbd>
+                <kbd class="kbd w-14 h-14">t</kbd>
+                <kbd class="kbd w-14 h-14">y</kbd>
+                <kbd class="kbd w-14 h-14">u</kbd>
+                <kbd class="kbd w-14 h-14">i</kbd>
+                <kbd class="kbd w-14 h-14">o</kbd>
+                <kbd class="kbd w-14 h-14">p</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd w-14 h-14">a</kbd>
+                <kbd class="kbd w-14 h-14">s</kbd>
+                <kbd class="kbd w-14 h-14">d</kbd>
+                <kbd class="kbd w-14 h-14">f</kbd>
+                <kbd class="kbd w-14 h-14">g</kbd>
+                <kbd class="kbd w-14 h-14">h</kbd>
+                <kbd class="kbd w-14 h-14">j</kbd>
+                <kbd class="kbd w-14 h-14">k</kbd>
+                <kbd class="kbd w-14 h-14">l</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+                <kbd class="kbd w-14 h-14">z</kbd>
+                <kbd class="kbd w-14 h-14">x</kbd>
+                <kbd class="kbd w-14 h-14">c</kbd>
+                <kbd class="kbd w-14 h-14">v</kbd>
+                <kbd class="kbd w-14 h-14">b</kbd>
+                <kbd class="kbd w-14 h-14">n</kbd>
+                <kbd class="kbd w-14 h-14">m</kbd>
+                <kbd class="kbd w-14 h-14">/</kbd>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mx-32">
+            <button
+                class="btn btn-ghost flex gap-3 bg-[#894189] rounded-[30px] py-3 text-xl font-medium text-[#FFF] px-10">
+                Life <img src="images/Group 23.svg" alt=""><span>1</span>
+            </button>
+            <button
+                class="btn btn-ghost flex gap-3 bg-[#360490] rounded-[30px] py-3 text-xl font-medium text-[#FFF] px-8">
+                Score <img src="images/monetization_on.svg" alt=""><span>1</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex justify-center items-center ">
+        <div class="bg-[linear-gradient(121deg,_#ffffff8f_0%,_#98979700_102.2%)] rounded-2xl flex flex-col justify-center items-center gap-6 p-11">
+            <h3 class="text-[#FFF] font-extrabold text-6xl text-center">Score : <span>14</span></h3>
+            <button class="btn text-[#010313] font-semibold text-2xl px-8 py-8 rounded-lg">Play Now</button>
+            <p class="text-[#FFF] text-xl font-medium text-center">Practice will make you Pro</p>
+        </div>
+    </section>
+
 </body>
+
 </html>
