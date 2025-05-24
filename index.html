@@ -83,19 +83,19 @@
         <div class="flex justify-between items-center mx-32">
             <button
                 class="btn btn-ghost flex gap-3 bg-[#894189] rounded-[30px] py-3 text-xl font-medium text-[#FFF] px-10">
-                Life <img src="images/Group 23.svg" alt=""><span>1</span>
+                Life <img src="images/Group 23.svg" alt=""><span id="rem-life" >5</span>
             </button>
-            <button
+            <button 
                 class="btn btn-ghost flex gap-3 bg-[#360490] rounded-[30px] py-3 text-xl font-medium text-[#FFF] px-8">
-                Score <img src="images/monetization_on.svg" alt=""><span>1</span>
+                Score <img src="images/monetization_on.svg" alt=""><span id="score-change">0</span>
             </button>
         </div>
     </section>
 
-    <section class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex justify-center items-center hidden">
+    <section id="result-section" class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex justify-center items-center hidden">
         <div class="bg-[linear-gradient(121deg,_#ffffff8f_0%,_#98979700_102.2%)] rounded-2xl flex flex-col justify-center items-center gap-6 p-11">
-            <h3 class="text-[#FFF] font-extrabold text-6xl text-center">Score : <span>14</span></h3>
-            <button class="btn text-[#010313] font-semibold text-2xl px-8 py-8 rounded-lg">Play Now</button>
+            <h3 class="text-[#FFF] font-extrabold text-6xl text-center">Score : <span id="result-score">14</span></h3>
+            <button id="play-again-btn" class="btn text-[#010313] font-semibold text-2xl px-8 py-8 rounded-lg">Play Now</button>
             <p class="text-[#FFF] text-xl font-medium text-center">Practice will make you Pro</p>
         </div>
     </section>
