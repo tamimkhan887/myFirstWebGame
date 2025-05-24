@@ -30,54 +30,54 @@
             <h1 class="font-anton text-9xl font-normal text-white text-center">ALPHABET CLASH</h1>
             <p class="text-2xl font-medium text-center text-[#FFF]">Unleash Your Keyboard Kung Fu : Press “Enter” to
                 Play</p>
-            <button class="btn rounded-lg">Play Now</button>
+            <button id="play-btn" class="btn rounded-lg">Play Now</button>
         </div>
     </section>
 
-    <section class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex flex-col justify-center gap-20">
+    <section id="play-ground" class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex flex-col justify-center gap-20 hidden">
         <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] mx-32 h-80">
             <div class="flex justify-center">
                 <p class="bg-[#2F2941] px-6 pb-4 rounded-b-xl text-white">Don't watch keyboard while playing...
                 </p>
             </div>
             <div class="flex justify-center items-center h-full">
-                <p id="current-alphabet" class="text-black text-9xl font-bold uppercase">Y</p>
+                <p id="current-alphabet" class="text-black text-9xl font-bold">Y</p>
             </div>
         </div>
 
         <div>
             <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd w-14 h-14">q</kbd>
-                <kbd class="kbd w-14 h-14">w</kbd>
-                <kbd class="kbd w-14 h-14">e</kbd>
-                <kbd class="kbd w-14 h-14">r</kbd>
-                <kbd class="kbd w-14 h-14">t</kbd>
-                <kbd class="kbd w-14 h-14">y</kbd>
-                <kbd class="kbd w-14 h-14">u</kbd>
-                <kbd class="kbd w-14 h-14">i</kbd>
-                <kbd class="kbd w-14 h-14">o</kbd>
-                <kbd class="kbd w-14 h-14">p</kbd>
+                <kbd id="q" class="kbd w-14 h-14">q</kbd>
+                <kbd id="w" class="kbd w-14 h-14">w</kbd>
+                <kbd id="e" class="kbd w-14 h-14">e</kbd>
+                <kbd id="r" class="kbd w-14 h-14">r</kbd>
+                <kbd id="t" class="kbd w-14 h-14">t</kbd>
+                <kbd id="y" class="kbd w-14 h-14">y</kbd>
+                <kbd id="u" class="kbd w-14 h-14">u</kbd>
+                <kbd id="i" class="kbd w-14 h-14">i</kbd>
+                <kbd id="o" class="kbd w-14 h-14">o</kbd>
+                <kbd id="p" class="kbd w-14 h-14">p</kbd>
             </div>
             <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd w-14 h-14">a</kbd>
-                <kbd class="kbd w-14 h-14">s</kbd>
-                <kbd class="kbd w-14 h-14">d</kbd>
-                <kbd class="kbd w-14 h-14">f</kbd>
-                <kbd class="kbd w-14 h-14">g</kbd>
-                <kbd class="kbd w-14 h-14">h</kbd>
-                <kbd class="kbd w-14 h-14">j</kbd>
-                <kbd class="kbd w-14 h-14">k</kbd>
-                <kbd class="kbd w-14 h-14">l</kbd>
+                <kbd id="a" class="kbd w-14 h-14">a</kbd>
+                <kbd id="s" class="kbd w-14 h-14">s</kbd>
+                <kbd id="d" class="kbd w-14 h-14">d</kbd>
+                <kbd id="f" class="kbd w-14 h-14">f</kbd>
+                <kbd id="g" class="kbd w-14 h-14">g</kbd>
+                <kbd id="h" class="kbd w-14 h-14">h</kbd>
+                <kbd id="j" class="kbd w-14 h-14">j</kbd>
+                <kbd id="k" class="kbd w-14 h-14">k</kbd>
+                <kbd id="l" class="kbd w-14 h-14">l</kbd>
             </div>
             <div class="my-1 flex w-full justify-center gap-1">
-                <kbd class="kbd w-14 h-14">z</kbd>
-                <kbd class="kbd w-14 h-14">x</kbd>
-                <kbd class="kbd w-14 h-14">c</kbd>
-                <kbd class="kbd w-14 h-14">v</kbd>
-                <kbd class="kbd w-14 h-14">b</kbd>
-                <kbd class="kbd w-14 h-14">n</kbd>
-                <kbd class="kbd w-14 h-14">m</kbd>
-                <kbd class="kbd w-14 h-14">/</kbd>
+                <kbd id="z" class="kbd w-14 h-14">z</kbd>
+                <kbd id="x" class="kbd w-14 h-14">x</kbd>
+                <kbd id="c" class="kbd w-14 h-14">c</kbd>
+                <kbd id="v" class="kbd w-14 h-14">v</kbd>
+                <kbd id="b" class="kbd w-14 h-14">b</kbd>
+                <kbd id="n" class="kbd w-14 h-14">n</kbd>
+                <kbd id="m" class="kbd w-14 h-14">m</kbd>
+                <kbd  class="kbd w-14 h-14">/</kbd>
             </div>
         </div>
         <div class="flex justify-between items-center mx-32">
@@ -92,13 +92,16 @@
         </div>
     </section>
 
-    <section class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex justify-center items-center ">
+    <section class="bg-[url('images/background.png')] bg-no-repeat bg-[#010313] bg-center min-h-screen flex justify-center items-center hidden">
         <div class="bg-[linear-gradient(121deg,_#ffffff8f_0%,_#98979700_102.2%)] rounded-2xl flex flex-col justify-center items-center gap-6 p-11">
             <h3 class="text-[#FFF] font-extrabold text-6xl text-center">Score : <span>14</span></h3>
             <button class="btn text-[#010313] font-semibold text-2xl px-8 py-8 rounded-lg">Play Now</button>
             <p class="text-[#FFF] text-xl font-medium text-center">Practice will make you Pro</p>
         </div>
     </section>
+
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alphaClash.js"></script>
 
 </body>
 
